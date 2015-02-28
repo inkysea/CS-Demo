@@ -2,7 +2,7 @@
 
 
 #  build_id is inherited from vRCS
-DOWNLOAD_PATH = /tmp/deployment/${build_id}
+DOWNLOAD_PATH=/tmp/deployment/${build_id}
 
 wget $TARGZ --no-check-certificate --directory-prefix=$DOWNLOAD_PATH
 
