@@ -1,6 +1,5 @@
 #!/bin/sh
 
-HTTP_DOC = $ARGV[1] 
 
 #  build_id is inherited from vRCS
 DOWNLOAD_PATH = /tmp/deployment/${build_id}
