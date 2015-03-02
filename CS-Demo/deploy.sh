@@ -20,7 +20,7 @@ tar -zxvf *${build_id}.tar.gz -C /tmp
 
 mv /tmp/CS-Demo/www/* ${HTTP_DOC}
 
-chmod -r 644 ${HTTP_DOC}/*
+chmod -R 644 ${HTTP_DOC}/*
 
 echo "====restarting apache====="
 /etc/init.d/httpd restart
