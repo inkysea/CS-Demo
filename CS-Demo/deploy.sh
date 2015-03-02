@@ -16,7 +16,10 @@ rm -rf $HTTP_DOC/*
 
 echo "=====install new artifact======"
 cd $DOWNLOAD_PATH
-tar -zxvf *${build_id}.tar.gz -C ${HTTP_DOC}
+tar -zxvf *${build_id}.tar.gz -C /tmp
+
+mv /tmp/CS-Demo/www/* ${HTTP_DOC}
+
 chmod -r 644 ${HTTP_DOC}/*
 
 echo "====restarting apache====="
