@@ -4,6 +4,8 @@
 #  build_id is inherited from vRCS
 DOWNLOAD_PATH=/tmp/deployment/${build_id}
 
+echo "wget "+$TARGZ+" --no-check-certificate --directory-prefix="+$DOWNLOAD_PATH
+
 wget $TARGZ --no-check-certificate --directory-prefix=$DOWNLOAD_PATH
 
 BASEDIR=$(dirname $0)
